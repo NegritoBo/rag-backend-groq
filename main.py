@@ -7,11 +7,11 @@ from sentence_transformers import SentenceTransformer
 from openai import OpenAI
 
 # === CONFIGURACION ===
-BASE_DIR = "/Users/santiagobogero/21_rag_2025_tfn_cncaf"
+BASE_DIR = os.path.dirname(__file__)
 FAISS_TFN_DIR = os.path.join(BASE_DIR, "index", "faiss_tfn")
 FAISS_CNCAF_DIR = os.path.join(BASE_DIR, "index", "faiss_cncaf")
 MODEL_NAME = "BAAI/bge-small-en-v1.5"
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "TU_API_KEY_AQUI")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "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")
 GROQ_MODEL = "mistral-7b-instruct"
 TOP_K = 2
 MAX_CHARS_PER_CHUNK = 1200
