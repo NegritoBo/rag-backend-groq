@@ -13,7 +13,7 @@ FAISS_TFN_DIR = os.path.join(BASE_DIR, "index", "faiss_tfn")
 FAISS_CNCAF_DIR = os.path.join(BASE_DIR, "index", "faiss_cncaf")
 MODEL_NAME = "BAAI/bge-small-en-v1.5"
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "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")
-GROQ_MODEL = "mixtral-8x7b-32768"  # ← Modelo válido en Groq
+GROQ_MODEL = "llama3-70b-8192"  # ← Modelo válido en Groq
 TOP_K = 2
 MAX_CHARS_PER_CHUNK = 1200
 
